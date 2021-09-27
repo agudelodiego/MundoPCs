@@ -5,7 +5,9 @@ FECHA: Sep 26 2021
 
 DESCRIPCION DEL ARCHIVO: El presente archivo esta dedicado al diseño de una clase DispositivoEntrada, el cual se encargara de crear objetos de tipo dispositivo de entrada, entre los cuales podremos tener Raton y Teclado, puesto que son los tipos perifericos de entrada que solemos tener en un computador
 """
-#########################################################################################################################################################################
+
+
+
 #Creacion de clase
 class DispositivoEntrada:
 
@@ -34,7 +36,8 @@ class DispositivoEntrada:
     def marca(self,nuevo):
         self._marca = nuevo
 
-#########################################################################################################################################################################
+
+
 #!ENTORNO DE PRUEBAS
 if __name__ == '__main__':
     
