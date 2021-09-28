@@ -39,9 +39,12 @@ class Orden:
     #Get lista computadoras en la orden
     @property
     def computadoras(self):
-        return self.__computadoras
+        mensaje = ''
+        for i in self.__computadoras:
+            mensaje = mensaje + i.__str__()
+        return mensaje
 
-
+    
     #Get idOrder
     @property
     def idOrden(self):
@@ -50,7 +53,11 @@ class Orden:
     
     #Metodo __str__
     def __str__(self):
-        mensaje = f'''COMPUTADORAS EN LA ORDERN: {self.__computadoras}'''
+        mensaje = f'''************************************************************************************
+        ORDEON No.{self.__idOrden}, Computadoras:
+        '''
+        for i in self.__computadoras:
+            mensaje = mensaje + i.__str__()
         return mensaje
 
 
@@ -82,3 +89,7 @@ if __name__ == '__main__':
 
     #Get computadoras
     print(orden1.computadoras)
+
+    #Metodo str
+    print(orden1)
+    

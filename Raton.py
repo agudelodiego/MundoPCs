@@ -34,7 +34,7 @@ class Raton(DispositivoEntrada):
 
     #Metodo __str__
     def __str__(self):
-        mensaje = f'DISPOSITIVO:Raton -- MARCA:{self.marca} - TIPO DE ENTRADA:{self.tipoEntrada} -- ID:{self.__idRaton}'
+        mensaje = f'RATON -> Id: {self.__idRaton}, Marca:{self.marca}, Tipo de entrada:{self.tipoEntrada}'
         return mensaje
 
 

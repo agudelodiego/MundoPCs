@@ -49,7 +49,7 @@ class Monitor:
 
     #Metodo __str__
     def __str__(self):
-        mensaje = f'DISPOSITIVO:Monitor - MARCA:{self.__marca} - TAMAÑO:{self.__tamaño} - ID:{self.__idMonitor}'
+        mensaje = f'MONITOR -> Id:{self.__idMonitor}, Marca:{self.__marca}, Tamaño:{self.__tamaño}'
         return mensaje
 
 

@@ -32,7 +32,7 @@ class Teclado(DispositivoEntrada):
 
     #Metodo __str__
     def __str__(self):
-        mensaje = f'DISPOSITIVO: Teclado - MARCA: {self.marca} - TIPO DE ENTRADA:{self.tipoEntrada} -- ID:{self.__idTeclado}'
+        mensaje = f'TECLAD -> Id:{self.__idTeclado}, Marca:{self.marca}, Tipo entrada:{self.tipoEntrada}'
         return mensaje
 
 

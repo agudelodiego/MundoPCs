@@ -79,13 +79,10 @@ class Computadora:
     #Metodo __str__
     def __str__(self):
         mensaje = f'''
-        ***********************COMPUTADORA************************
-        NOMBRE --> {self.__nombre}
-        MONITOR --> {self.__monitor}
-        RATON --> {self.__raton}
-        TECLADO --> {self.__teclado}
-        ID_PC --> {self.__idComputadora}
-        ************************************************************
+        {self.__nombre}:
+            {self.__monitor}
+            {self.__teclado}
+            {self.__raton}
         '''
         return mensaje
 
