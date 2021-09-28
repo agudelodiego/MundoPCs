@@ -26,9 +26,15 @@ class Raton(DispositivoEntrada):
         self.__idRaton = Raton.contadorRatones
 
     
+    #Metodo Get __idRaton
+    @property
+    def idRaton(self):
+        return self.__idRaton
+
+
     #Metodo __str__
     def __str__(self):
-        mensaje = f'DISPOSITIVO: Raton - MARCA: {self.marca} - TIPO DE ENTRADA: {self.tipoEntrada}'
+        mensaje = f'DISPOSITIVO:Raton -- MARCA:{self.marca} - TIPO DE ENTRADA:{self.tipoEntrada} -- ID:{self.__idRaton}'
         return mensaje
 
 
@@ -50,6 +56,9 @@ if __name__ == '__main__':
 
     #Get marca
     print(ejemplo1.marca)
+
+    #Get idRaton
+    print(ejemplo1.idRaton)
 
     #Llamado metodo __str__
     print(f'Metodo __str__: {ejemplo1}')
